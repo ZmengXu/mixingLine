@@ -1,0 +1,37 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      initialConditions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//min:maxZ          0 1;
+
+Tfuel             300;
+
+fuel
+{
+    H2            1;
+}
+
+Toxidizer         900;
+
+oxidizer
+{
+    N2            3.76;
+    O2            1;
+}
+
+p               202650;
+
+// ************************************************************************* //
